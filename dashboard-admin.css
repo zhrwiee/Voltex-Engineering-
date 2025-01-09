@@ -4,7 +4,7 @@ body{
     overflow-x: hidden;
     background-color: rgb(201, 201, 201);
 }
-
+/* This is a single-line comment */
 .dashboard{
     display: grid;
     grid-template-areas: 

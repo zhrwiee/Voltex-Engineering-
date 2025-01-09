@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mailBody = "Name: $fullname\nEmail: $email\nPhone Number: $number\nMessage: $message";
     //add email features
+    //add any features
 
         if (mail($to, $subject, $mailBody, $headers)) {
             echo '<script>alert("Submission successful! Thank you.");</script>';

@@ -10,8 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $subject = "Voltex Engineering Contact Form Submission";
 
         $headers = "From: $email";
+    
 
         $mailBody = "Name: $fullname\nEmail: $email\nPhone Number: $number\nMessage: $message";
+    //add email features
+    //add any 
 
         if (mail($to, $subject, $mailBody, $headers)) {
             echo '<script>alert("Submission successful! Thank you.");</script>';

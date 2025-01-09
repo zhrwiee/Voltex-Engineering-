@@ -1,4 +1,4 @@
-<?php
+ss<?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullname = isset($_POST["fullname"]) ? $_POST["fullname"] : "";
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mailBody = "Name: $fullname\nEmail: $email\nPhone Number: $number\nMessage: $message";
     //add email features
-    //add any 
+    //add any ss
 
         if (mail($to, $subject, $mailBody, $headers)) {
             echo '<script>alert("Submission successful! Thank you.");</script>';

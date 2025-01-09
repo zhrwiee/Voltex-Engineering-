@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 Layer Tab</title>
+  <style>
+    .tab-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 50%;
+      background-color: red;
+    }
+
+    .tab-names {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .tab-name {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .tab-name.active {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: aqua;
+    }
+
+    .tab {
+      display: none;
+    }
+
+    .tab.active {
+      display: block;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 100px;
+      margin-top: 20px;
+    }
+
+    .body{
+        width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="tab-names" id="tabNames">
+  <div class="tab-name" data-tab="1">Tab 1</div>
+  <div class="tab-name" data-tab="2">Tab 2</div>
+  <div class="tab-name" data-tab="3">Tab 3</div>
+  <div class="tab-name" data-tab="4">Tab 4</div>
+</div>
+
+<div class="tab-container">
+  <div class="tab active" id="tab1">
+    <!-- Content for tab 1 -->
+    <h2>Tab 1 Content</h2>
+  </div>
+
+  <div class="tab" id="tab2">
+    <!-- Content for tab 2 -->
+    <h2>Tab 2 Content</h2>
+  </div>
+
+  <div class="tab" id="tab3">
+    <!-- Content for tab 3 -->
+    <h2>Tab 3 Content</h2>
+  </div>
+
+  <div class="tab" id="tab4">
+    <!-- Content for tab 4 -->
+    <h2>Tab 4 Content</h2>
+  </div>
+</div>
+
+<div class="button-container">
+  <button onclick="prevTab()">Previous</button>
+  <button onclick="nextTab()">Next</button>
+</div>
+
+<script>
+  let currentTab = 1;
+
+  function showTab(tabIndex) {
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.classList.remove('active');
+    });
+
+    document.getElementById(`tab${tabIndex}`).classList.add('active');
+
+    // Highlight the active tab name
+    document.querySelectorAll('.tab-name').forEach(name => {
+      name.classList.remove('active');
+      if (name.getAttribute('data-tab') == tabIndex) {
+        name.classList.add('active');
+      }
+    });
+
+    currentTab = tabIndex;
+  }
+
+  function nextTab() {
+    if (currentTab < 4) {
+      showTab(currentTab + 1);
+    }
+  }
+
+  function prevTab() {
+    if (currentTab > 1) {
+      showTab(currentTab - 1);
+    }
+  }
+
+  // Show the initial tab
+  showTab(currentTab);
+</script>
+
+</body>
+</html>

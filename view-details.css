@@ -1,0 +1,62 @@
+.page-title{
+    height: 30px;
+    color: rgba(0, 41, 146, 1);
+    font-size: 40px;
+    font-family: 'Russo One', sans-serif;
+    margin: 30px 50px 20px 50px;
+    text-align: center;
+}
+
+.section-to-center{
+    display: flex;
+    justify-content: center;
+}
+
+.details{
+    padding: 30px 50px ;
+    width: 50%;
+    background-color: rgba(161, 161, 161, 0.6);
+    border: 2px solid grey;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+
+.details > div{
+    margin: 50px 0;
+}
+
+.double-col{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+
+.double-col > div{
+    width: 50%;
+}
+
+.btn input{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+}
+
+.btn{
+    display: flex;
+    gap: 30px;
+}
+
+.update-btn input{
+    cursor: pointer;
+}
+
+.pay-btn input{
+    background-color: rgba(0, 41, 146, 1);
+    color: white;
+    cursor: pointer;
+}

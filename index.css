@@ -1,0 +1,355 @@
+body {
+    max-width: 100%; 
+    margin: 0 auto;
+    scroll-behavior: smooth; 
+}
+
+.background img {
+    width: 100%;
+    opacity: 90%;
+}
+
+.div-section{
+    position: absolute;
+    top: 0%;
+}
+
+.section-1 {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0%;
+}
+
+.content {
+    color: white;
+    position: absolute;
+    bottom: 40%;
+    left: 130px;
+}
+
+.content-1{
+    color: FF5C00;
+    font-family: 'Roboto Serif', serif;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.content-2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
+.content-3{
+    color: FF5C00;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    border: 2px solid rgba(255, 92, 0, 1);
+    width: 180px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    animation: float 1s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.content-3:hover{
+    color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
+    border: 2px solid white;
+}
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+}
+
+.section-2{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    padding: 50px 0px;
+    column-gap: 90px;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.intro{
+    width: 40%;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.deco-1{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deco-1 img{
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.intro img{
+    width: 120px;
+    height: 80px;
+}
+
+.intro-company-name{
+    font-size: 40px;
+    font-family: 'Russo One', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255,92,0);
+}
+
+.intro-company{
+    width: 60%;
+    margin: 10px 0px;
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+a.read-more{
+    background-color: 002992;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 25px;
+    border: 0;
+    margin: 10px 0px;
+    text-decoration: none;
+}
+
+.read-more-btn{
+    margin: 20px 0;
+}
+
+.read-more-btn:hover{
+    opacity: 0.8;
+}
+
+.section-3{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.layer-3{
+    display: grid;
+    grid-template-areas: "title-3 title-3";
+    width: 100%;
+    height: 100%;
+    column-gap: 200px;
+    row-gap: 50px;
+    position: absolute;
+    top: 0%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.layer-3 > div{
+    border-radius: 10px;
+    text-align: center;
+}
+
+.residential-img, .commercial-img{
+    background-image: url("img/residential-img.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 270px;
+    position: relative;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.commercial-img{
+    background-image: url("img/commercial-img.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.residential-img:hover, .commercial-img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.layer-3 .text{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(0, 41, 146, 0.8);
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.layer-3 img{
+    width: 32px;
+    height: 32px;
+}
+
+.background-3{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/bg-sect-1-services.png");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title-3{
+    grid-area: title-3;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FF5C00;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.section-4{
+    display: grid;
+    grid-template-areas: "title-4 title-4 title-4 ";
+    row-gap: 20px;
+    column-gap: 130px;
+    padding: 50px 0px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(237,237,237);
+}
+
+.section-4 div{
+    width: 350px;
+}
+
+.section-4 .title-4{
+    grid-area: title-4;
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Russo One';
+    font-weight: 400;
+    color: #FF5C00;
+}
+
+.section-4 img{
+    width: 150px;
+    height: 150px;
+}
+
+.section-4 p{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #272727;
+}
+
+.section-4 h1{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+}
+
+span.offer{
+    font-family: 'Russo One', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255,92,0);
+}
+
+.section-5{
+    display: grid;
+    grid-template-areas: 
+        "title title title"
+        "img-1 img-2 img-3"
+        "img-4 img-5 img-6";
+    row-gap: 50px;
+    column-gap: 80px;
+    padding: 50px 0px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.section-5 img{
+    width: 380px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-img-1{
+    grid-area: img-1;
+}
+
+.project-img-2{
+    grid-area: img-2;
+}
+
+.project-img-3{
+    grid-area: img-3;
+}
+
+.project-img-4{
+    grid-area: img-4;
+}
+
+.project-img-5{
+    grid-area: img-5;
+}
+
+.project-img-6{
+    grid-area: img-6;
+}
+
+.title-5{
+    grid-area: title;
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Russo One';
+    font-weight: 400;
+    color: #FF5C00;
+}
+
+
+
+

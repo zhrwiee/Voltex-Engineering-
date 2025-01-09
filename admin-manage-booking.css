@@ -1,0 +1,166 @@
+body{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.dashboard{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.empty{
+    height: 40px;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    background-color: #F2F2F2;
+    padding-left: 30px;
+}
+
+.company-name{
+    color: rgba(255, 92, 0, 1);
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu-tile{
+    margin: 50px 0px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4C4C4C;
+}
+
+.menu-tile > div, .logout-tile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 90%;
+    height: 50px;
+    padding-left: 30px;
+}
+
+.menu-tile span, .logout-tile span{
+    margin-right: 10px;
+}
+
+.logout-tile{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 80px;
+}
+
+.top-right-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+
+.top-right-col .profile{
+    display: flex;
+    width: 150px;
+    gap: 10px;
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+
+.top-right-col .role{
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    color: #747474;
+}
+
+.top-right-col .noti-icon{
+    background-color: #dbdada;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.profile-pic img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.manage-booking{
+    width: 100%;
+}
+
+.space{
+    height: 200px;
+    width: 100%;
+}
+
+.manage-booking table{
+    width: 80%;
+    align-items: center;
+}
+
+table th{
+    text-align: center;
+    height: 40px;
+    background-color: rgb(210, 210, 210);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: rgba(76, 76, 76, 1);
+}
+
+table td{
+    text-align: center;
+    height: 40px;
+    border-bottom: 1px solid rgb(193, 193, 193);
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgba(128, 128, 128, 1);
+}
+
+table td.name{
+    text-align: start;
+    padding-left: 10px;
+}
+
+td.action .assign-btn{
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+input[type=submit]{
+    background-color: rgba(29, 78, 216, 1);
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    border: 0;
+    width: 80px;
+    height: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: rgba(29, 78, 216, 0.8);
+}
+
+.menu-tile > div:hover, .logout-tile:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}

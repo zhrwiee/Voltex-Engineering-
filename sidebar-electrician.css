@@ -1,0 +1,62 @@
+.sidebar{
+    grid-area: sidebar;
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(143,72,32);
+    padding-left: 30px;
+}
+
+.company-name{
+    color: rgba(255, 92, 0, 1);
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu-tile{
+    margin: 50px 0px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+.sidebar img{
+    width: 30px;
+    height: 30px;
+}
+
+.menu-tile > div, .logout-tile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 90%;
+    height: 50px;
+    padding-left: 20px;
+}
+
+.menu-tile > div:hover, .logout-tile:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu-tile span, .logout-tile span{
+    padding-right: 10px;
+}
+
+.logout-tile{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 80px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-link.active{
+    color: rgba(0, 41, 146, 1);
+}

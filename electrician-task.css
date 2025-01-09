@@ -1,0 +1,81 @@
+body{
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.content{
+    grid-area: content;
+    width: 100%;
+    padding: 50px 0 0 0;
+}
+
+.list-table{
+    display: flex;
+    justify-content: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.list-table table{
+    background-color: white;
+    width: 95%;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+td{
+    text-align: center;
+    font-family: sans-serif;
+    height: 80px;
+}
+
+td.name, td.address{
+    text-align: start;
+}
+
+.list-table th{
+    background-color: rgb(210, 210, 210);
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content .title{
+    color: rgba(0, 41, 146, 1);
+    font-family: 'Russo One', sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+input[name="completed"], input[name="drop"]{
+    border: 0;
+    background-color: rgb(24, 146, 0);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    width: 100px;
+}
+
+input[name="drop"]{
+    background-color: rgb(209, 6, 6);
+}
+
+input[name="completed"]:hover, input[name="drop"]:hover{
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.table-wrapper {
+    max-height: 300px; 
+    overflow-y: auto; 
+    width: 95%; 
+    margin: auto; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}

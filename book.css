@@ -1,0 +1,328 @@
+.div-section{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    font-family: "Muli", sans-serif;
+}
+
+.top-heading{
+    background-image: url("img/about-us-bg.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 310px;
+    position: relative;
+}
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+}
+
+.title{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: FF5C00;
+    font-size: 64px;
+    font-family: 'Roboto Serif', serif;
+}
+
+.mid-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.booking-section{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.tab-container{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    position: relative;
+}
+
+.tab-section{
+    display: flex;
+    gap: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+.tab-name {
+    background-color: rgba(0, 41, 146, 0.5);
+    color: #ffffff;
+    opacity: 0.8;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: 0.4s ease;
+    padding: 5px 0;
+}
+
+.tab-name.active {
+    border-color: var(--line-border-fill);
+    background-color: rgba(0, 41, 146, 1);
+    color: #fff;
+    border-color: #159944;
+    opacity: 1;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.button-container {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    margin: 0px 30px 30px 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.button-container button{
+    width: 90px;
+    height: 35px;
+    border: 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background-color: rgba(0, 41, 146, 1);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.button-container button:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+button.proceed-payment{
+    width: 180px;
+}
+
+button.prev-tab1{
+    cursor: not-allowed;
+    color: #020202;
+    background-color: rgb(180, 180, 180);
+    opacity: 0.8;
+}
+
+button.prev{
+    border: 2px solid rgba(0, 41, 146, 1);
+    color: rgba(0, 41, 146, 1);
+    background-color: white;
+}
+
+.double-col{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.double-col .col-1{
+    width: 35%;
+}
+
+.double-col .col-2{
+    width: 35%;
+}
+
+label{
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 41, 146, 1);
+}
+
+input, select{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(179, 179, 179);
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+form{
+    width: 100%;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.selection-summary{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 41, 146, 1);
+    width: 180px;
+}
+
+.selection-summary span{
+    font-size: 16px;
+    color: black;
+}
+
+.selection-summary > div{
+    margin-bottom: 10px;
+}
+
+.calendar-timeslot{
+    width: 90%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.calendar-section{
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid grey;
+}
+
+.calendar-header{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid grey;
+}
+
+.prev, .current-date, .next{
+    cursor: pointer;
+}
+
+.display-timeslot{
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid grey;
+}
+
+.timeslot-header{
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.time-slots{
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+}
+
+.time-slot{
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 41, 146, 1);
+    width: 80%;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.time-slot:hover{
+    transform: scale(105%);
+    transition: 0.3s;
+}
+
+.time-slot.selected {
+    background-color: rgba(0, 41, 146, 1); 
+    color: #fff; 
+}
+
+.center-timeslot{
+    display: flex;
+    justify-content: center;
+}
+
+.calendar{
+    width: 100%;
+}
+
+.display-calendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    text-align: center;
+}
+
+td{
+    width: 40px;
+}
+
+td:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+thead{
+    height: 50px;
+    background-color: white;
+}
+
+tbody tr{
+    height: 30px;
+    cursor: pointer;
+}
+
+td.selected-date {
+    background-color: rgba(0, 41, 146, 1); 
+    color: #fff; 
+}
+
+td.today {
+    font-weight: bold;
+    border: 1.5px solid black; 
+}
+
+td.past-date {
+    color: #020202; /* Set the color for past dates */
+    cursor: not-allowed; /* Set the cursor for past dates */
+    opacity: 0.6;
+}
+
+.time-slot.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+

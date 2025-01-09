@@ -1,0 +1,257 @@
+body{
+    background-color: rgb(235, 235, 235);
+    overflow-x: hidden;
+}
+.div-section{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+}
+
+.top-heading{
+    background-image: url("img/about-us-bg.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 310px;
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: FF5C00;
+    font-size: 64px;
+    font-family: 'Roboto Serif', serif;
+}
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+}
+
+.section-2{
+    display: grid;
+    grid-template-areas: "title-2 title-2";
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 250px;
+    background-image: url("img/layer-3.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    position: relative;
+}
+
+.layer-2{
+    background-color: rgba(0, 36, 130, 0.88);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: 0;
+}
+
+.title-2{
+    grid-area: title-2;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+    color: rgba(133, 165, 228, 1);
+    z-index: 1;
+}
+
+.title-2 p{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+.title-services{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-family: 600;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.services-list ul{
+    list-style: none;
+    padding: 0;
+    color: rgb(197, 197, 197);
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.services-list li{
+    margin-bottom: 10px;
+}
+
+.commercial-services, .residential-services{
+    z-index: 1;
+}
+
+.booking-form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.booking-form form{
+    width: 60%;
+}
+
+.form-title{
+    font-family: 'Russo One', sans-serif;
+    font-size: 45px;
+    color: rgba(0, 36, 130, 1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking-form label{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(100, 100, 100);
+    font-weight: 200;
+}
+
+.booking-form input, .booking-form select{
+    height: 50px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(99, 99, 99);
+    padding: 0 10px;
+}
+
+.double-col{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+
+.double-col > div{
+    width: 50%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn button{
+    width: 15%;
+    padding: 10px 0;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 36, 130, 1);
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.msg-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    height: 100vh;
+    z-index: 3000;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: grid;
+    grid-template-areas: "msg msg";
+    background-color: rgb(243, 243, 243);
+    padding: 30px 50px;
+    row-gap: 50px;
+    column-gap: 80px;
+    font-family: 'Roboto', sans-serif;
+    width: 20%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.box a{
+    text-decoration: none;
+}
+
+.msg {
+    color: rgb(0, 0, 0);
+    grid-area: msg;
+    text-align: start;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.go-login, .go-register{
+    background-color: rgba(255, 255, 255, 0) ;
+    color: rgb(0, 0, 0);
+    padding: 8px 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.go-login a{
+    color: black;
+}
+
+.go-register{
+    background-color: black;
+}
+
+.go-register a{
+    color: white;
+}
+
+.close-btn {
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    z-index: 40000;
+    background-image: url("img/close-btn.svg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+
+.close-btn img{
+    width: 30px;
+}
+
